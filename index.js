@@ -48,7 +48,7 @@ function generateQRCode(text) {
   qrCodeDiv.appendChild(loadingDiv);
 
   setTimeout(function() {
-    var qrCodeURL = "https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=" + encodeURIComponent(text);
+    var qrCodeURL = "https://quickchart.io/qr?text=" + encodeURIComponent(text);
     var img = document.createElement('img');
     img.src = qrCodeURL;
     qrCodeDiv.innerHTML = '';
